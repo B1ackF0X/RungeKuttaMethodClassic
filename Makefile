@@ -1,13 +1,13 @@
 all: RungeKuttaMethodClassic
 
-RungeKuttaMethodClassic: RungeKuttaMethodClassic.o vector.o function.o
-		g++ RungeKuttaMethodClassic.o vector.o function.o -o RungeKuttaMethodClassic
+RungeKuttaMethodClassic: main.o Vector.o function.o
+		g++ main.o Vector.o function.o -o RungeKuttaMethodClassic
 	
-RungeKuttaMethodClassic.o: RungeKuttaMethodClassic.cpp
-		g++ -c RungeKuttaMethodClassic.cpp
+main.o: main.cpp
+		g++ -c main.cpp
 
-vector.o: vector.cpp
-		g++ -c vector.cpp
+Vector.o: Vector.cpp
+		g++ -c Vector.cpp
 
 function.o: function.cpp
 		g++ -c function.cpp
