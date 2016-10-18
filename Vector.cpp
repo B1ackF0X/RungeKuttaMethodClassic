@@ -20,6 +20,8 @@ Vector::Vector(double ax, double ay, double avx, double avy)
 
 void Vector::out()
 {
+    using namespace std;
+    
     cout << "x=" << setw(8) << left << x;
     cout << "y=" << setw(8) << left << y;
     cout << "vx=" << setw(8) << left << vx;

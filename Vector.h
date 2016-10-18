@@ -14,6 +14,3 @@ Vector operator +(Vector a, Vector b);
 Vector operator -(Vector a, Vector b);
 Vector operator *(double a, Vector b);
 Vector operator *(Vector b, double a);
-Vector F(Vector U, double t);
-
-using namespace std;
