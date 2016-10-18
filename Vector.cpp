@@ -10,7 +10,7 @@ Vector::Vector()
     vy = 0;
 }
 
-Vector::Vector(float ax, float ay, float avx, float avy)
+Vector::Vector(double ax, double ay, double avx, double avy)
 {
     x = ax;
     y = ay;
@@ -50,7 +50,7 @@ Vector operator -(Vector a, Vector b)
     return c;
 }
 
-Vector operator *(float a, Vector b)
+Vector operator *(double a, Vector b)
 {
     Vector c;
     
@@ -62,7 +62,7 @@ Vector operator *(float a, Vector b)
     return c;
 }
 
-Vector operator *(Vector b, float a)
+Vector operator *(Vector b, double a)
 {
     Vector c;
     

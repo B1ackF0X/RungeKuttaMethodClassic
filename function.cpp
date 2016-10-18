@@ -1,11 +1,11 @@
 #include "Vector.h"
 
 
-Vector F(Vector U, float t)
+Vector F(Vector U, double t)
 {
     Vector res;
     
-    float g = 9.81;
+    double g = 9.81;
     
     res.x = U.vx;
     res.y = U.vy;

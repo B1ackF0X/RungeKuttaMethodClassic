@@ -11,7 +11,7 @@
 
 int main()
 {
-    float t = T, dt = dT;
+    double t = T, dt = dT;
     
     Vector U(X, Y, VX, VY);
     Vector k1, k2, k3, k4;

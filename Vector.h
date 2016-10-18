@@ -1,19 +1,19 @@
 class Vector
 {
     public:
-            float x, y, vx, vy;
+            double x, y, vx, vy;
             
             Vector();
             
-            Vector(float ax, float ay, float avx, float avy);
+            Vector(double ax, double ay, double avx, double avy);
             
             void out();
 };
 
 Vector operator +(Vector a, Vector b);
 Vector operator -(Vector a, Vector b);
-Vector operator *(float a, Vector b);
-Vector operator *(Vector b, float a);
-Vector F(Vector U, float t);
+Vector operator *(double a, Vector b);
+Vector operator *(Vector b, double a);
+Vector F(Vector U, double t);
 
 using namespace std;
